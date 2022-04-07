@@ -19,11 +19,15 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Consistent components</strong><br>
-      Attempting to make things like timeframe selectors, filters, export buttons, summaries, and more consistently designed and in the same location on every page in the app.
+      Attempting to make everything as consistent as possible across every page in the app. This includes timeframe selectors, filters, export buttons, summaries, and more.
     </li>
     <li class="mb-16">
       <strong>Accessible rebrand</strong><br>
       Pulling design from the new brand, but altered to work better with a modern web app and be more accessible.
+    </li>
+    <li class="mb-16">
+      <strong>Mobile and dark mode</strong><br>
+      Building responsive and dark mode support in from the start.
     </li>
     <li class="mb-16">
       <strong>No “Manage” section</strong><br>

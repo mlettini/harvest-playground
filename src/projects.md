@@ -6,7 +6,7 @@ title: Projects
 <header id="top-nav">
   <nav>
     <a href="#" class="is-active">Manage projects</a>
-    <a href="/harvest-playground/tasks">Manage tasks</a>
+    <a href="{{ '/tasks' | url }}">Manage tasks</a>
   </nav>
 </header>
 
@@ -76,7 +76,7 @@ title: Projects
           <td class="no-width text-right">$10,000.00</td>
           <td class="no-width text-right nowrap">$20,000.00</td>
           <td class="no-width">
-            <a href="/harvest-playground/project-analysis" class="button button-sm button-empty button-icon">
+            <a href="{{ '/project-analysis' | url }}" class="button button-sm button-empty button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
             </a>
           </td>

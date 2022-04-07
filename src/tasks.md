@@ -5,7 +5,7 @@ title: Tasks
 
 <header id="top-nav">
   <nav>
-    <a href="/harvest-playground/projects">Manage projects</a>
+    <a href="{{ '/projects' | url }}">Manage projects</a>
     <a href="#" class="is-active">Manage tasks</a>
   </nav>
 </header>

@@ -45,7 +45,7 @@ title: Clients
     </div>
     <div class="submit">
       <button class="button primary">Save client</button>
-      <a href="/harvest-playground/clients" class="button cancel">Cancel</a>
+      <a href="{{ '/clients' | url }}" class="button cancel">Cancel</a>
     </div>
   </div>
 

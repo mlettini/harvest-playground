@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "harvest design plaground",
   "scripts": {
-    "build": "eleventy",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'harvest-playground'",
     "serve": "eleventy --serve"
   },
   "repository": {

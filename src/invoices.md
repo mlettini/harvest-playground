@@ -103,6 +103,6 @@ title: Invoices
 
   <div class="empty big mt-16">
     No invoices match your current filters.<br>
-    <a href="/harvest-playground/invoice">Clear filters</a>
+    <a href="{{ '/invoice' | url }}">Clear filters</a>
   </div>
 </main>
