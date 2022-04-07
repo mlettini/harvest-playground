@@ -46,7 +46,7 @@ title: Clients
   </div>
 
   <div class="empty mt-16">
-    <img href="/harvest-playground/images/harvest/snap.png">
+    <img src="/harvest-playground/images/harvest/snap.png">
     <p class="mt-16 mb-16">
       Clients are the foundational element in Harvest.<br>
       Your team will track time to projects that belong to clients.
