@@ -1,4 +1,5 @@
 ---
+layout: layouts/harvest.njk
 title: Invoices
 ---
 
@@ -102,6 +103,6 @@ title: Invoices
 
   <div class="empty big mt-16">
     No invoices match your current filters.<br>
-    <a href="/harvest-nav/invoice">Clear filters</a>
+    <a href="/invoice">Clear filters</a>
   </div>
 </main>

@@ -1,10 +1,11 @@
 ---
+layout: layouts/harvest.njk
 title: Tasks
 ---
 
 <header id="top-nav">
   <nav>
-    <a href="/harvest-nav/projects">Manage projects</a>
+    <a href="/projects">Manage projects</a>
     <a href="#" class="is-active">Manage tasks</a>
   </nav>
 </header>

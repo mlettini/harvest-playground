@@ -1,4 +1,5 @@
 ---
+layout: layouts/harvest.njk
 title: Clients
 ---
 
@@ -44,7 +45,7 @@ title: Clients
     </div>
     <div class="submit">
       <button class="button primary">Save client</button>
-      <a href="/harvest-nav/clients" class="button cancel">Cancel</a>
+      <a href="/clients" class="button cancel">Cancel</a>
     </div>
   </div>
 

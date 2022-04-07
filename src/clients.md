@@ -1,4 +1,5 @@
 ---
+layout: layouts/harvest.njk
 title: Clients
 ---
 
@@ -15,7 +16,7 @@ title: Clients
       <h1>Clients</h1>
     </div>
     <div class="flex">
-      <a href="/harvest-nav/new-client" class="button primary">
+      <a href="/new-client" class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         New client
       </a>
@@ -50,7 +51,7 @@ title: Clients
       Clients are the foundational element in Harvest.<br>
       Your team will track time to projects that belong to clients.
     </p>
-    <a href="/harvest-nav/new-client" class="button primary">
+    <a href="/new-client" class="button primary">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
       Create your first client
     </a>
