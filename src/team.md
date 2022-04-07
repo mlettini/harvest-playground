@@ -107,7 +107,7 @@ title: Team
           <td class="no-width text-right">35.00</td>
           <td class="no-width">Administrator</td>
           <td class="no-width">
-            <a href="/team-analysis" class="button button-sm button-empty button-icon">
+            <a href="/harvest-playground/team-analysis" class="button button-sm button-empty button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
             </a>
           </td>

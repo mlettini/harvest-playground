@@ -5,14 +5,14 @@ title: Projects
 
 <header id="top-nav">
   <nav>
-    <a href="/projects" class="is-active">Manage projects</a>
-    <a href="/tasks">Manage tasks</a>
+    <a href="/harvest-playground/projects" class="is-active">Manage projects</a>
+    <a href="/harvest-playground/tasks">Manage tasks</a>
   </nav>
 </header>
 
 <main>
   <div class="flex justify-space-between mb-16">
-    <a href="/projects" class="button button-sm">
+    <a href="/harvest-playground/projects" class="button button-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to projects
     </a>
     <input class="input search" type="text" placeholder="Find a project…">
@@ -123,7 +123,7 @@ title: Projects
       <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle></svg> Rounded</button>
     </div>
     <div class="flex">
-      <a href="/detailed-report" class="button button-sm">See detailed time</a>
+      <a href="/harvest-playground/detailed-report" class="button button-sm">See detailed time</a>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
     </div>
   </div>

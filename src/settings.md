@@ -6,7 +6,7 @@ title: Settings
 <main>
   <div class="flex align-items-baseline justify-space-between">
     <h1>Account settings</h1>
-    <small>Looking for your profile settings? <a href="/profile">Click here</a></small>
+    <small>Looking for your profile settings? <a href="/harvest-playground/profile">Click here</a></small>
   </div>
 
   <div class="tabs mt-24 mb-16">

@@ -5,14 +5,14 @@ title: Team
 
 <header id="top-nav">
   <nav>
-    <a href="/team" class="is-active">Manage people</a>
+    <a href="/harvest-playground/team" class="is-active">Manage people</a>
     <a href="#">Manage roles</a>
   </nav>
 </header>
 
 <main>
   <div class="flex mb-16" style="height:38px">
-    <a href="/team-analysis" class="button button-sm">
+    <a href="/harvest-playground/team-analysis" class="button button-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Back to team
     </a>
   </div>
