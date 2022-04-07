@@ -5,7 +5,7 @@ title: Expenses
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Track expenses</a>
+    <a href="#" class="is-active">Ledger</a>
     <a href="#">Manage categories</a>
   </nav>
 </header>
