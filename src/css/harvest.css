@@ -64,6 +64,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
+    --gray-alpha-50:  rgba(255, 249, 242, 0.04);
+    --gray-alpha-100: rgba(255, 249, 242, 0.1);
+    --gray-alpha-200: rgba(255, 249, 242, 0.15);
+    --gray-alpha-300: rgba(255, 249, 242, 0.2);
+    --gray-alpha-400: rgba(255, 249, 242, 0.3);
+    --gray-alpha-500: rgba(255, 249, 242, 0.4);
+    --gray-alpha-600: rgba(255, 249, 242, 0.5);
+    --gray-alpha-700: rgba(255, 249, 242, 0.6);
+    --gray-alpha-800: rgba(255, 249, 242, 0.7);
+    --gray-alpha-900: rgba(255, 249, 242, 0.9);
+
     --gray-50:  rgba(255, 249, 242, 0.04);
     --gray-100: rgba(255, 249, 242, 0.1);
     --gray-200: rgba(255, 249, 242, 0.15);
