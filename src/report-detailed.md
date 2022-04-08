@@ -3,23 +3,12 @@ layout: layouts/harvest.njk
 title: Reports
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="{{ '/reports' | url }}">Summary</a>
-    <a href="{{ '/detailed-report' | url }}" class="is-selected">Detailed time</a>
-    <a href="#">Detailed expense</a>
-    <a href="{{ '/projects' | url }}">Project budget <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-    <a href="{{ '/team' | url }}">Team utilization <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-    <a href="#">Contractor</a>
-    <a href="#">Invoiced</a>
-    <a href="#">Uninvoiced</a>
-    <a href="#">Payments</a>
-  </nav>
-</header>
-
 <main>
-  <div class="flex justify-space-between">
+  <div class="flex align-items-start justify-space-between">
     <div>
+      <a href="{{ '/reports' | url }}" class="back-to">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Reports
+      </a>
       <h1>Detailed time report</h1>
     </div>
     <div class="flex">

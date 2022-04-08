@@ -787,7 +787,7 @@ input[type="radio"] {
   padding-top: 16px;
 }
 .time-table tr.is-running td {
-  background-color: var(--orange-100);
+  background-color: var(--orange-50);
 }
 @media (prefers-color-scheme: dark) {
   .time-table tr.is-running td {
@@ -920,30 +920,18 @@ input[type="radio"] {
   padding: 16px;
 }
 
-/* Back */
-.back-to {
-  color: var(--blue);
-  line-height: 1;
-}
-@media (prefers-color-scheme: dark) {
-  .back-to {
-    color: var(--blue-400);
-  }
-}
-
 /* Toast */
 .toast-position {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   pointer-events: none;
-  padding-top: 16px;
   position: fixed;
-  right: 0;
-  top: 0;
-  width: 100vw;
+  right: 8px;
+  top: 16px;
+  z-index: 1;
 }
 .toast {
-  animation: toast 400ms;
+  animation: toast-side 400ms;
   background-color: var(--green-100);
   border: 1px solid var(--green-300);
   border-radius: 4px;
@@ -955,10 +943,27 @@ input[type="radio"] {
   padding: 8px;
   pointer-events: all;
 }
-@keyframes toast {
+@media (max-width: 1000px) {
+  .toast-position {
+    justify-content: center;
+    right: 0;
+    top: 4px;
+    width: 100vw;
+  }
+  .toast {
+    animation: toast-bottom 400ms;
+  }
+}
+@keyframes toast-side {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateX(50px);
+  }
+}
+@keyframes toast-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }
 .toast svg {
@@ -1040,6 +1045,36 @@ label {
   color: var(--orange);
 }
 
+.back-to {
+  align-items: center;
+  display: inline-flex;
+  gap: 4px;
+  line-height: normal;
+}
+
+.reports-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 24px;
+}
+.report-box {
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 12px 0 12px 0;
+  color: var(--text);
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+}
+.report-box img {
+  height: 100px;
+  margin-bottom: 8px;
+}
+.report-box:hover {
+  background-color: var(--orange-50);
+  border-color: var(--orange-300);
+}
 
 
 
@@ -1075,6 +1110,9 @@ label {
 }
 .align-items-center {
   align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
 }
 .justify-space-between {
   justify-content: space-between;
