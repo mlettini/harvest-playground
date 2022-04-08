@@ -5,10 +5,10 @@ title: Invoices
 
 <header id="top-nav">
   <nav>
-    <a href="#" class="is-active">Manage invoices</a>
-    <a href="#">Manage recurring</a>
-    <a href="#">Manage retainers</a>
-    <a href="#">Settings</a>
+    <a href="#" class="is-selected">Overview</a>
+    <a href="#">Recurring invoices</a>
+    <a href="#">Retainers</a>
+    <a href="#">Configure</a>
   </nav>
 </header>
 
@@ -33,7 +33,11 @@ title: Invoices
           <label>Client<span class="required">*</span></label>
         </div>
         <div class="right">
-          <input class="input" type="text" autofocus>
+          <select class="input" autofocus>
+            <option>Client A</option>
+            <option>Client B</option>
+            <option>Client C</option>
+          </select>
         </div>
       </div>
       <div class="field mb-16">
@@ -81,12 +85,13 @@ title: Invoices
   <div class="tabs mt-24 mb-16">
     <nav>
       <a href="#">Open (12)</a>
-      <a href="#" class="is-active">All invoices</a>
+      <a href="#" class="is-selected">All invoices</a>
     </nav>
   </div>
 
   <div class="flex justify-space-between filters mb-4">
     <div class="flex">
+      <button class="button button-sm is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg> Bulk actions</button>
       <div class="button-group">
         <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
         <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
@@ -96,7 +101,7 @@ title: Invoices
       <button class="button button-sm is-filtered"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="18" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg> Client: <span>Apple Computers</span></button>
     </div>
     <div class="flex">
-      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save view</button>
+      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save</button>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
     </div>
   </div>

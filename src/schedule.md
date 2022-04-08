@@ -3,10 +3,16 @@ layout: layouts/harvest.njk
 title: Schedule
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="#" class="is-active">Projects schedule</a>
-    <a href="#">Team schedule</a>
-    <a href="#">Manage colors</a>
-  </nav>
-</header>
+<main>
+  <div class="flex justify-space-between">
+    <h1>Schedule</h1>
+  </div>
+
+  <div class="tabs mt-24 mb-16">
+    <nav>
+      <a href="#" class="is-selected">Project schedule</a>
+      <a href="#">Team schedule</a>
+    </nav>
+  </div>
+
+</main>

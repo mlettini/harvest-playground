@@ -3,13 +3,6 @@ layout: layouts/harvest.njk
 title: Team
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="{{ '/team' | url }}" class="is-active">Manage people</a>
-    <a href="#">Manage roles</a>
-  </nav>
-</header>
-
 <main>
   <div class="flex mb-16" style="height:38px">
     <a href="{{ '/team-analysis' | url }}" class="button button-sm">
@@ -27,7 +20,7 @@ title: Team
 
   <div class="tabs mt-16 mb-16">
     <nav>
-      <a href="#" class="is-active">General</a>
+      <a href="#" class="is-selected">General</a>
       <a href="#">Permissions</a>
       <a href="#">Assigned projects</a>
       <a href="#">Assigned people</a>

@@ -5,11 +5,12 @@ title: Reports
 
 <header id="top-nav">
   <nav>
-    <a href="{{ '/reports' | url }}" class="is-active">Summary</a>
+    <a href="{{ '/reports' | url }}" class="is-selected">Summary</a>
     <a href="{{ '/detailed-report' | url }}">Detailed time</a>
     <a href="#">Detailed expense</a>
     <a href="{{ '/projects' | url }}">Project budget <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
     <a href="{{ '/team' | url }}">Team utilization <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+    <a href="#">Compliance</a>
     <a href="#">Contractor</a>
     <a href="#">Invoiced</a>
     <a href="#">Uninvoiced</a>
@@ -24,7 +25,7 @@ title: Reports
 
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Clients</a>
+      <a href="#" class="is-selected">Clients</a>
       <a href="#">Projects</a>
       <a href="#">Tasks</a>
       <a href="#">People</a>

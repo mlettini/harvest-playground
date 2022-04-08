@@ -128,13 +128,13 @@
   outline-color: var(--charcoal);
 }
 html {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--color);
   height: 100%;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 body {
-  background: transparent;
+  background-color: transparent;
   color: inherit;
   font-family: "Muoto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 15px;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 38px;
 }
 h2 {
   font-size: 24px;
@@ -184,7 +184,7 @@ small {
   font-size: 13px;
 }
 hr {
-  background: var(--gray-alpha-200);
+  background-color: var(--gray-alpha-200);
   border: 0;
   display: block;
   height: 1px;
@@ -208,7 +208,7 @@ ul {
 
 /* Left Nav */
 #left-nav {
-  background: var(--charcoal);
+  background-color: var(--charcoal);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -216,7 +216,7 @@ ul {
   left: 0;
   margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   overflow: auto;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
   position: fixed;
   top: 0;
   width: var(--left-nav-width);
@@ -235,7 +235,6 @@ ul {
 #left-nav nav {
   display: flex;
   flex-direction: column;
-  gap: 2px;
 }
 #left-nav nav > a {
   align-items: center;
@@ -252,7 +251,7 @@ ul {
 #left-nav nav > a:hover {
   background-color: var(--gray-900);
 }
-#left-nav nav > a.is-active {
+#left-nav nav > a.is-selected {
   background-color: var(--gray-900);
   box-shadow: inset 3px 0 0 var(--orange);
   color: var(--white);
@@ -328,7 +327,7 @@ ul {
     color: var(--color-secondary);
   }
   #left-nav nav > a:hover,
-  #left-nav nav > a.is-active {
+  #left-nav nav > a.is-selected {
     background-color: var(--gray-100);
     color: var(--color);
   }
@@ -354,19 +353,18 @@ ul {
   border: 0;
   border-radius: 60px;
   bottom: 16px;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 0.01),
-              0 2px 6px rgb(0 0 0 / 0.02),
-              0 3px 7px rgb(0 0 0 / 0.04),
-              0 4px 8px rgb(0 0 0 / 0.05);
+  box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 0.05),
+              0 2.0px 2.0px rgb(0 0 0 / 0.07),
+              0 5.0px 8.0px rgb(0 0 0 / 0.1);
   color: var(--warm-white);
   display: flex;
-  font-size: 24px;
-  height: 40px;
+  font-size: 20px;
+  height: 36px;
   justify-content: center;
   position: fixed;
   right: 16px;
   text-decoration: none;
-  width: 40px;
+  width: 36px;
   z-index: 1;
 }
 .help-menu-button:hover {
@@ -410,14 +408,14 @@ ul {
   white-space: nowrap;
 }
 #top-nav nav > a:hover,
-#top-nav nav > a.is-active {
+#top-nav nav > a.is-selected {
   border-bottom-color: var(--orange);
   color: var(--color);
 }
 #top-nav nav > a:active {
   border-bottom-color: var(--orange-700);
 }
-#top-nav nav > a.is-active {
+#top-nav nav > a.is-selected {
   font-weight: 500;
 }
 #top-nav nav > a:focus {
@@ -565,7 +563,7 @@ main.narrow {
 }
 .button.button-empty:not(:hover):not(:active) {
   background-color: transparent;
-  border: transparent;
+  border-color: transparent;
 }
 .button.is-disabled {
   background-color: var(--gray-alpha-50) !important;
@@ -614,6 +612,13 @@ main.narrow {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-right: 0;
+}
+.button.is-selected {
+  background-color: var(--orange-100);
+  border-color: var(--orange-400);
+  box-shadow: none;
+  cursor: default;
+  z-index: 1;
 }
 a.button {
   text-decoration: none;
@@ -671,6 +676,10 @@ a.button {
 .input.inline:hover {
   background-color: var(--white);
   box-shadow: inset 0 0 0 1px var(--gray-600);
+}
+select.input {
+  cursor: pointer;
+  line-height: normal;
 }
 textarea.input {
   height: auto;
@@ -785,6 +794,10 @@ input[type="radio"] {
     background-color: var(--gray-50);
   }
 }
+.weekly-progress {
+  background-color: var(--gray-alpha-50);
+  padding: 16px;
+}
 
 /* Tabs */
 .tabs {
@@ -811,14 +824,14 @@ input[type="radio"] {
   white-space: nowrap;
 }
 .tabs nav > a:hover,
-.tabs nav > a.is-active {
+.tabs nav > a.is-selected {
   border-bottom-color: var(--orange);
   color: var(--color);
 }
 .tabs nav > a:active {
   border-bottom-color: var(--orange-700);
 }
-.tabs nav > a.is-active {
+.tabs nav > a.is-selected {
   font-weight: 500;
 }
 .tabs nav > a:focus {
@@ -830,7 +843,7 @@ input[type="radio"] {
 .tabs.time-tabs nav > a {
   flex: 1;
 }
-.tabs.time-tabs nav > a:not(.is-active):not(:hover){
+.tabs.time-tabs nav > a:not(.is-selected):not(:hover){
   filter: grayscale(1);
 }
 .tabs.time-tabs div {
@@ -841,7 +854,7 @@ input[type="radio"] {
 
 /* Meters */
 .meter {
-  background: var(--gray-alpha-50);
+  background-color: var(--gray-alpha-50);
   border-radius: 100px;
   height: 11px;
   margin: 5px 0;
@@ -878,14 +891,14 @@ input[type="radio"] {
 
 /* Badges */
 .badge {
-  background: var(--blue-100);
+  background-color: var(--blue-100);
   border-radius: 100px;
   color: var(--blue-600);
   font-size: 13px;
   padding: 4px 8px;
 }
 .badge.green {
-  background: var(--green);
+  background-color: var(--green);
   color: var(--white);
 }
 
@@ -918,6 +931,43 @@ input[type="radio"] {
   }
 }
 
+/* Toast */
+.toast-position {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  padding-top: 16px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+}
+.toast {
+  animation: toast 400ms;
+  background-color: var(--green-100);
+  border: 1px solid var(--green-300);
+  border-radius: 4px;
+  box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 0.05),
+              0 2.0px 2.0px rgb(0 0 0 / 0.07),
+              0 5.0px 8.0px rgb(0 0 0 / 0.1);
+  font-size: 13px;
+  line-height: normal;
+  padding: 8px;
+  pointer-events: all;
+}
+@keyframes toast {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.toast svg {
+  color: var(--green);
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 /* Empty */
 .empty {
   background-color: var(--gray-alpha-50);
@@ -942,14 +992,8 @@ input[type="radio"] {
 
 /* Form Box */
 .form-box {
-  background-clip: padding-box;
-  background-color: var(--white);
-  border: 1px solid var(--gray-alpha-200);
-  border-radius: 6px;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 0.02),
-              0 2px 3px rgb(0 0 0 / 0.03),
-              0 3px 4px rgb(0 0 0 / 0.04),
-              0 4px 5px rgb(0 0 0 / 0.05);
+  background-color: var(--orange-50);
+  border: 1px solid var(--orange-200);
   padding: 32px;
 }
 @media (prefers-color-scheme: dark) {

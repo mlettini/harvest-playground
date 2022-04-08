@@ -3,13 +3,6 @@ layout: layouts/harvest.njk
 title: Team
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="{{ '/team' | url }}" class="is-active">Manage people</a>
-    <a href="#">Manage roles</a>
-  </nav>
-</header>
-
 <main>
   <div class="flex justify-space-between mb-16">
     <a href="{{ '/team' | url }}" class="button button-sm">

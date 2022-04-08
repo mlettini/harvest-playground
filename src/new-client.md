@@ -3,13 +3,6 @@ layout: layouts/harvest.njk
 title: Clients
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="#" class="is-active">Manage clients</a>
-    <a href="#">Manage contacts</a>
-  </nav>
-</header>
-
 <main class="narrow">
   <div>
     <h1>New client</h1>

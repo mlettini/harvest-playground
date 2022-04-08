@@ -14,8 +14,12 @@ title: Home
       Offers more space to include iconography, group related sections, feel more modern, and match a full-width responsive Harvest.
     </li>
     <li class="mb-16">
+      <strong>Manage &rarr; More</strong><br>
+      While the navigation grouping helps bridge some IA confusion, the “Manage” section is still problematic. By renaming it to “More”, it highlights that other nearby sections are also management focused.
+    </li>
+    <li class="mb-16">
       <strong>Consistent headlines</strong><br>
-      Attempting to directly name and define every page in the app. This is an IA iteration that can help customers with spatial awareness and understanding where they are.
+      Attempting to name (almost) every page in the app. This is an IA iteration that can help customers understand where they are and a space for us to link help info.
     </li>
     <li class="mb-16">
       <strong>Consistent components</strong><br>
@@ -23,15 +27,15 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Accessible rebrand</strong><br>
-      Pulling design from the new brand, but altered to work better with a modern web app and be more accessible.
+      Leaning more heavily into the new brand, but altered to work better with a modern web app and be more accessible. It was entirely unplanned that, with this style, Harvest kinda looks more like Toggl Track. Our warm-white is similar to their background.
     </li>
     <li class="mb-16">
-      <strong>Mobile and dark mode</strong><br>
-      Building responsive and dark mode support in from the start.
+      <strong>Automatic dark mode</strong><br>
+      Showcasing how this design can support dark mode, which is an accessibility feature of modern operating systems loved by many people.
     </li>
     <li class="mb-16">
-      <strong>No “Manage” section</strong><br>
-      This is an IA iteration based out of recent research. Managing is confusing in Harvest today, so here I experiment with these pages living under different sections.
+      <strong>Responsive for mobile devices</strong><br>
+      Perhaps not optimized for phone screens, but the app works at that size.
     </li>
   </ul>
 </main>

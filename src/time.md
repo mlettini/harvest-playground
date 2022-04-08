@@ -3,41 +3,26 @@ layout: layouts/harvest.njk
 title: Time
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="#" class="is-active">Track daily</a>
-    <a href="#">Track weekly</a>
-    <a href="#">Manage reminders</a>
-  </nav>
-</header>
-
 <main>
   <div class="flex justify-space-between mb-16">
     <div class="flex">
-      <h1>Timesheet</h1>
+      <div class="button-group mr-8">
+        <button class="button button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+        <button class="button button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></button>
+        <button class="button button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+      </div>
+      <h1>Today: Friday, 05 Apr</h1>
     </div>
     <div class="flex">
       <button class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         New timer
       </button>
+      <button class="button"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> View</button>
       <button class="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
         Teammates
       </button>
-    </div>
-  </div>
-
-  <div class="flex justify-space-between">
-    <div class="flex">
-      <div class="button-group">
-        <button class="button button-sm button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
-        <button class="button button-sm button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-        <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Today: <span>5 Apr 2022</span></button>
-      </div>
-      <a href="#" class="button button-sm">Submit for approval</a>
-    </div>
-    <div class="flex">
     </div>
   </div>
 
@@ -46,7 +31,7 @@ title: Time
       <a href="#">Mon 🎉<br>3:54</a>
       <a href="#">Tue 🎉<br>1:00</a>
       <a href="#">Wed 🎉<br>1:00</a>
-      <a href="#" class="is-active">Thu 🎉<br>1:00</a>
+      <a href="#" class="is-selected">Thu 🎉<br>1:00</a>
       <a href="#">Fri<br>0:00</a>
       <a href="#">Sat<br>0:00</a>
       <a href="#">Sun<br>0:00</a>
@@ -59,6 +44,7 @@ title: Time
     <table border="0" class="table time-table" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
+          <td class="no-width"><input type="checkbox"></td>
           <td>
             <strong>Task name</strong><br>
             <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
@@ -78,6 +64,7 @@ title: Time
           </td>
         </tr>
         <tr>
+          <td class="no-width"><input type="checkbox"></td>
           <td>
             <strong>Task name</strong><br>
             <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
@@ -97,6 +84,7 @@ title: Time
           </td>
         </tr>
         <tr class="is-running">
+          <td class="no-width"><input type="checkbox"></td>
           <td>
             <strong>Task name</strong><br>
             <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
@@ -139,11 +127,20 @@ title: Time
       </tbody>
       <tfoot>
         <tr>
+          <td></td>
           <td class="text-right"><h3 class="text-400 text-secondary">Total:</h3></td>
           <td class="text-right"><h3>6:36</h3></td>
           <td></td>
         </tr>
       </tfoot>
     </table>
+  </div>
+
+
+
+  <div class="weekly-progress mt-16 mb-16">
+    Weekly progress
+      <div class="meter"></div>
+      <a href="#" class="button button-sm">Submit for approval</a>
   </div>
 </main>

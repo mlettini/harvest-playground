@@ -3,13 +3,6 @@ layout: layouts/harvest.njk
 title: Expenses
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="#" class="is-active">Ledger</a>
-    <a href="#">Manage categories</a>
-  </nav>
-</header>
-
 <main>
   <div class="flex justify-space-between">
     <div class="flex">
@@ -86,7 +79,7 @@ title: Expenses
                 Week
                 <div class="badge green ml-4">Approved</div>
               </div>
-              <a href="#" class="button button-xs">Resubmit for approval</a>
+              <a href="#" class="button button-xs">Withdraw approval</a>
             </div>
           </th>
         </tr>

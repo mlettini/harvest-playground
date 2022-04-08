@@ -3,13 +3,6 @@ layout: layouts/harvest.njk
 title: Projects
 ---
 
-<header id="top-nav">
-  <nav>
-    <a href="{{ '/projects' | url }}" class="is-active">Manage projects</a>
-    <a href="{{ '/tasks' | url }}">Manage tasks</a>
-  </nav>
-</header>
-
 <main>
   <div class="flex justify-space-between mb-16">
     <a href="{{ '/projects' | url }}" class="button button-sm">
@@ -106,7 +99,7 @@ title: Projects
   <div class="tabs mt-24 mb-16">
     <nav>
       <a href="#">Budget</a>
-      <a href="#" class="is-active">Tasks</a>
+      <a href="#" class="is-selected">Tasks</a>
       <a href="#">Team</a>
       <a href="#">Invoices</a>
     </nav>

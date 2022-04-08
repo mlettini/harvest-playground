@@ -1,12 +1,16 @@
 ---
 layout: layouts/harvest.njk
-title: Tasks
+title: More
 ---
 
 <header id="top-nav">
   <nav>
-    <a href="{{ '/projects' | url }}">Manage projects</a>
-    <a href="#" class="is-active">Manage tasks</a>
+    <a href="#" class="is-selected">Tasks</a>
+    <a href="#">Categories</a>
+    <a href="#">Contacts</a>
+    <a href="#">Roles</a>
+    <a href="#">Item types</a>
+    <a href="#">Colors</a>
   </nav>
 </header>
 
@@ -26,7 +30,7 @@ title: Tasks
 
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-active">Active (20)</a>
+      <a href="#" class="is-selected">Active (20)</a>
       <a href="#">Billable (5)</a>
       <a href="#">Stale (12)</a>
       <a href="#">Archived</a>
