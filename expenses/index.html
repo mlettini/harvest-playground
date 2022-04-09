@@ -17,6 +17,14 @@
           else
             e.style.display = 'flex';
       }
+      window.addEventListener('keydown', ({key}) => {
+        if (key !== 'Meta') return
+        document.querySelector('html').classList.add('show-real-anchors')
+      })
+      window.addEventListener('keyup', ({key}) => {
+        if (key !== 'Meta') return
+        document.querySelector('html').classList.remove('show-real-anchors')
+      })
     </script>
   </head>
   <body>
@@ -28,7 +36,15 @@
         </div>
         <nav>
           <a href="/harvest-playground/time" class="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="6" x2="12" y2="12">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="3s" repeatCount="indefinite"></animateTransform>
+              </line>
+              <line x1="16" y1="14" x2="12" y2="12">
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="30s" repeatCount="indefinite"></animateTransform>
+              </line>
+            </svg>
             <span>Time</span> <time>0:36</time>
           </a>
           <a href="/harvest-playground/expenses" class="is-selected">
@@ -68,7 +84,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             <span>Team</span>
           </a>
-          <a href="/harvest-playground/tasks" class="">
+          <a href="/harvest-playground/more-tasks" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
             <span>More</span>
           </a>
@@ -95,6 +111,11 @@
           </a>
         </nav>
       </div>
+
+      <a href="#" class="trial-note">
+        29 days left in trial<br>
+        <span>Upgrade today</span>
+      </a>
     </header>
 
     <button type="button" class="mobile-menu-button" onclick="toggle_visibility('left-nav');">
@@ -114,7 +135,7 @@
     <div class="flex">
       <button class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-        New expense
+        Add expense
       </button>
       <button class="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>

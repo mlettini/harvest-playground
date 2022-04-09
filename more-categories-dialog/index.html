@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Team • Harvest Playground</title>
+    <title>More • Harvest Playground</title>
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1, initial-scale=1, viewport-fit=cover, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -80,11 +80,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <span>Clients</span>
           </a>
-          <a href="/harvest-playground/team" class="is-selected">
+          <a href="/harvest-playground/team" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             <span>Team</span>
           </a>
-          <a href="/harvest-playground/more-tasks" class="">
+          <a href="/harvest-playground/more-tasks" class="is-selected">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
             <span>More</span>
           </a>
@@ -127,33 +127,106 @@
       <span>Help</span>
     </a>
 
-    <div class="scroll-container"><main>
-  <a href="/harvest-playground/team-analysis" class="back-to mb-8">
-    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Team
-  </a>
+    <div class="scroll-container"><header id="top-nav">
+  <nav>
+    <a href="/harvest-playground/more-tasks">Tasks</a>
+    <a href="#" class="is-selected">Categories</a>
+    <a href="#">Contacts</a>
+    <a href="#">Roles</a>
+    <a href="#">Item types</a>
+    <a href="#">Colors</a>
+  </nav>
+</header>
+<main>
   <div class="flex justify-space-between">
     <div class="flex">
-      <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg" class="avatar" width="60" height="60">
-      <div class="ml-8">
-        <h1>Matthew Lettini</h1>
-        mlettini@getharvest.com
-      </div>
+      <h1>Expense categories</h1>
     </div>
     <div class="flex">
+      <button class="button primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        New category
+      </button>
+      <input class="input search" type="text" placeholder="Find a category…">
     </div>
   </div>
-  <div class="tabs mt-16 mb-16">
+  <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-selected">General</a>
-      <a href="#">Permissions</a>
-      <a href="#">Assigned projects</a>
-      <a href="#">Assigned people</a>
-      <a href="#">Notifications</a>
-      <a href="#">Integrations</a>
-      <a href="#">Security</a>
+      <a href="#" class="is-selected">Active (20)</a>
+      <a href="#">Unit priced (5)</a>
+      <a href="#">Archived</a>
     </nav>
   </div>
+  <div class="flex justify-space-between filters">
+    <div class="flex">
+      <button class="button button-sm is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg> Bulk actions</button>
+    </div>
+    <div class="flex">
+      <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
+    </div>
+  </div>
+  <div class="table-wrapper mt-16">
+    <table border="0" class="table" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th class="no-width"><input type="checkbox"></th>
+          <th class="is-sorted">Category <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></th>
+          <th>Unit price</th>
+          <th class="no-width"></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="no-width"><input type="checkbox"></td>
+          <td><strong>Category name</strong></td>
+          <td>$0.485 USD per mile</td>
+          <td class="no-width">
+            <a href="#" class="button button-sm button-empty button-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </main>
+<div class="dialog-backdrop">
+  <dialog open>
+    <div class="mb-16">
+      <strong>New category</strong>
+      <input class="input" placeholder="Category name">
+    </div>
+    <div class="mb-24">
+      <strong>Default hourly rate</strong>
+      <div class="input-group">
+        <span>$</span>
+        <input class="input" placeholder="0.00" style="width:clamp(100px, 25%, 300px)">
+        <span>USD</span>
+      </div>
+    </div>
+    <div>
+      <div>
+        <label>
+          <input type="checkbox" checked="checked"> This task is billable by default
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox"> This is a common task and should be added to all future projects
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox"> Add this task to all existing active projects now
+        </label>
+      </div>
+    </div>
+    <div class="mt-24">
+      <a href="/harvest-playground/more-categories" class="button primary">Save category</a>
+      <a href="/harvest-playground/more-categories" class="button">Cancel</a>
+    </div>
+  </dialog>
+</div>
 </div>
   </body>
 </html>
