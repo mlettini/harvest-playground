@@ -16,31 +16,79 @@ title: Reports
     </div>
   </div>
 
-  <hr class="mt-16 mb-16">
+  <hr class="mt-16 mb-24">
 
-  <nav class="reports-list">
+  <nav class="reports-list mb-24">
     <a href="{{ '/report-summary' | url }}" class="report-box">
       <img src="{{ '/images/snap.png' | url }}">
       <div>
-        <h4>Summary report</h4>
+        <h4>Summary time</h4>
         <span class="text-secondary">Some text about the report here.</span>
       </div>
     </a>
     <a href="{{ '/report-detailed' | url }}" class="report-box">
       <img src="{{ '/images/snap.png' | url }}">
       <div>
-        <h4>Detailed time report</h4>
+        <h4>Detailed time</h4>
         <span class="text-secondary">Some text about the report here.</span>
       </div>
     </a>
-    <a href="#">Detailed expense</a>
-    <a href="{{ '/projects' | url }}">Project budget <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-    <a href="{{ '/team' | url }}">Team utilization <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-    <a href="#">Compliance</a>
-    <a href="#">Contractor</a>
-    <a href="#">Invoiced</a>
-    <a href="#">Uninvoiced</a>
-    <a href="#">Payments</a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Detailed expense</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="{{ '/projects' | url }}" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Project budget <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="{{ '/team' | url }}" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Team utilization <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Timesheet compliance</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Contractor time</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Uninvoiced</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Invoiced</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>Payments</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
   </nav>
 
 </main>

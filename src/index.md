@@ -6,7 +6,10 @@ title: Home
 <main class="narrow">
   <h1 class="mb-16">Hello world!</h1>
   <p class="mb-16">
-    This is a testing ground with various design explorations for Harvestapp and Porchlight. Please approach it with caution and many grains-of-salt. Here be dragons. Some of the ideas I’m exploring include:
+    This is a testing ground with various design explorations for Harvestapp and Porchlight. Please approach it with caution and many grains-of-salt. Here be dragons. To see what sections are available in this prototype, <strong>hold down the CMD key</strong>.
+  </p>
+  <p class="mb-16">
+    Some of the ideas I’m exploring include:
   </p>
   <ul class="ml-16">
     <li class="mb-16">
@@ -15,7 +18,7 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Manage &rarr; More</strong><br>
-      While the navigation grouping helps bridge some IA confusion, the “Manage” section is still problematic. By renaming it to “More”, it highlights that other nearby sections are also management focused.
+      While the navigation grouping helps bridge some IA confusion, the “Manage” section is still problematic. By renaming it to “More”, it’s easier to understand the sections within will be similar to nearby sections but not overlap.
     </li>
     <li class="mb-16">
       <strong>Consistent headlines</strong><br>
@@ -24,6 +27,14 @@ title: Home
     <li class="mb-16">
       <strong>Consistent components</strong><br>
       Attempting to make everything as consistent as possible across every page in the app. This includes timeframe selectors, filters, export buttons, summaries, and more.
+    </li>
+    <li class="mb-16">
+      <strong>Bulk actions</strong><br>
+      Every row of every table is (1) selectable and (2) has a dedicated actions button. A disabled bulk action exists on all these pages too to show where it would appear.
+    </li>
+    <li class="mb-16">
+      <strong>Iconography</strong><br>
+      Attempting to use more distinct iconography. Helps create relationships and more easily identify actions. Icons should be accompanied by text as much as possible.
     </li>
     <li class="mb-16">
       <strong>Accessible rebrand</strong><br>
