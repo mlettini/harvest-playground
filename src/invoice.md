@@ -13,7 +13,7 @@ title: Invoices
 </header>
 
 <main>
-  <a href="{{ '/invoices' | url }}" class="back-to">
+  <a href="{{ '/invoices' | url }}" class="back-to mb-16">
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Invoices
   </a>
 
@@ -21,7 +21,8 @@ title: Invoices
     <div>
       <h1>Invoice #1234</h1>
     </div>
-    <input class="input search" type="text" placeholder="Find an invoice…">
+    <button class="button button-icon show-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+    <input class="input search show-desktop" type="text" placeholder="Find an invoice…">
   </div>
 
   <div class="flex justify-space-between filters mt-16">

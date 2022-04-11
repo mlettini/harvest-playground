@@ -19,6 +19,13 @@ title: Reports
   <hr class="mt-16 mb-24">
 
   <nav class="reports-list mb-24">
+    <a href="#" class="report-box">
+      <img src="{{ '/images/snap.png' | url }}">
+      <div>
+        <h4>My time</h4>
+        <span class="text-secondary">Some text about the report here.</span>
+      </div>
+    </a>
     <a href="{{ '/report-summary' | url }}" class="report-box">
       <img src="{{ '/images/snap.png' | url }}">
       <div>

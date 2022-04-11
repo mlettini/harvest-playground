@@ -18,11 +18,11 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Manage &rarr; More</strong><br>
-      While the navigation grouping helps bridge some IA confusion, the “Manage” section is still problematic. By renaming it to “More”, it’s easier to understand the sections within will be similar to nearby sections but not overlap.
+      While the navigation grouping helps bridge some IA confusion, the “Manage” section can still be problematic. By renaming it to “More” it’s easier to understand the sections within will be similar to nearby sections.
     </li>
     <li class="mb-16">
       <strong>Consistent headlines</strong><br>
-      Attempting to name (almost) every page in the app. This is an IA iteration that can help customers understand where they are and a space for us to link help info.
+      Attempting to name every page in the app. This is an IA design that can help customers understand where they are, and offer us a clear space to link education info.
     </li>
     <li class="mb-16">
       <strong>Consistent components</strong><br>
@@ -30,7 +30,7 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Bulk actions</strong><br>
-      Every row of every table is (1) selectable and (2) has a dedicated actions button. A disabled bulk action exists on all these pages too to show where it would appear.
+      Every row of every table is has a dedicated actions button and is selectable for bulk actions. A disabled bulk actions button shows where that button would appear.
     </li>
     <li class="mb-16">
       <strong>Iconography</strong><br>
@@ -42,7 +42,7 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Automatic dark mode</strong><br>
-      Showcasing how this design can support dark mode, which is an accessibility feature of modern operating systems loved by many people.
+      Showcasing how this design could support dark mode, which is an accessibility feature of modern operating systems loved by many people.
     </li>
     <li class="mb-16">
       <strong>Responsive for mobile devices</strong><br>
