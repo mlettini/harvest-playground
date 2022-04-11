@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Approval • Harvest Playground</title>
+    <title>Invoices • Harvest Playground</title>
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1, initial-scale=1, viewport-fit=cover, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,7 +51,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
             <span>Expenses</span>
           </a>
-           <a href="/harvest-playground/approval" class="is-selected">
+           <a href="/harvest-playground/approval" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
             <span>Approval</span> <span style="color:#fa5d00">*</span>
           </a>
@@ -59,7 +59,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
             <span>Schedule</span>
           </a>
-          <a href="/harvest-playground/invoices" class="">
+          <a href="/harvest-playground/invoices" class="is-selected">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             <span>Invoices</span>
           </a>
@@ -127,21 +127,115 @@
       <span>Help</span>
     </a>
 
-    <div class="scroll-container"><main>
+    <div class="scroll-container"><header id="top-nav">
+  <nav>
+    <a href="#" class="is-selected">Overview</a>
+    <a href="#">Recurring invoices</a>
+    <a href="#">Retainers</a>
+    <a href="#">Configure</a>
+  </nav>
+</header>
+<main>
   <div class="flex justify-space-between">
-    <h1>Approval</h1>
-    <button class="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
-      Set up reminders
-    </button>
+    <div class="flex">
+      <h1>Invoices</h1>
+    </div>
+    <div class="flex">
+      <button class="button primary is-disabled">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+        Create invoice
+      </button>
+      <button class="button button-icon show-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+      <input class="input search show-desktop" type="text" placeholder="Find an invoice…">
+    </div>
+  </div>
+  <div class="form-box mt-16">
+    <div class="form-box-inner">
+      <div class="field mb-16">
+        <div class="left">
+          <label>Client<span class="required">*</span></label>
+        </div>
+        <div class="right">
+          <select class="input" autofocus>
+            <option>Client A</option>
+            <option>Client B</option>
+            <option>Client C</option>
+          </select>
+        </div>
+      </div>
+      <div class="field mb-16">
+        <div class="left">
+          <label class="no-height">Invoice type</label>
+        </div>
+        <div class="right">
+          <div>
+            <label>
+              <input type="radio" checked="checked"> Create an invoice based on tracked time and expenses
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio"> Create a blank invoice that can be issued on a recurring schedule
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio"> Create a blank invoice
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="submit">
+        <button class="button primary">Next step <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+        <a href="/harvest-playground/invoices" class="button cancel">Cancel</a>
+      </div>
+    </div>
   </div>
   <div class="tabs mt-24 mb-16">
     <nav>
-      <a href="#" class="is-selected">Pending time</a>
-      <a href="#">Pending expenses<span style="color:#fa5d00">*</span></a>
-      <a href="#">Unsubmitted</a>
-      <a href="#">Approved</a>
+      <a href="#">Open (12)</a>
+      <a href="#" class="is-selected">All invoices</a>
     </nav>
+  </div>
+  <div class="flex justify-space-between filters mb-4">
+    <div class="flex">
+      <button class="button button-sm is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg> Bulk actions</button>
+      <div class="button-group">
+        <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+        <button class="button button-sm button-icon is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
+        <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> All time</button>
+      </div>
+      <button class="button button-sm is-filtered"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="18" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg> Status: <span>Open</span></button>
+      <button class="button button-sm is-filtered"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="18" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg> Client: <span>Apple Computers</span></button>
+    </div>
+    <div class="flex">
+      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save</button>
+      <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
+    </div>
+  </div>
+  <div class="summary mt-16 mb-16">
+    <div class="summary-box">
+      Total open amount<br>
+      <h2>$1,234.56</h2>
+      <div class="flex justify-space-between mt-8">
+        Draft <strong>$123.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Outstanding <strong>$456.00</strong>
+      </div>
+    </div>
+    <div class="summary-box">
+      Total paid<br>
+      <h2>$1,234.56</h2>
+      <div class="pt-8"><div class="meter" style="width:100%"></div></div>
+      <div class="flex justify-space-between">
+        Invoiced <strong>$123.00</strong>
+      </div>
+    </div>
+  </div>
+  <div class="empty big mt-16">
+    No invoices match your current filters.<br>
+    <a href="/harvest-playground/invoice">Clear filters</a>
   </div>
 </main>
 </div>

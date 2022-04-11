@@ -163,7 +163,7 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
   font-size: 17px;
@@ -359,6 +359,12 @@ ul {
   #left-nav nav > a.close-menu {
     background-color: var(--gray-100);
   }
+  .trial-note {
+    border-color: var(--gray-300);
+  }
+  .trial-note:hover {
+    background-color: var(--gray-100);
+  }
 }
 
 
@@ -373,11 +379,8 @@ ul {
   align-items: center;
   background-color: var(--orange);
   border: 0;
-  border-radius: 60px;
+  border-radius: 300px;
   bottom: 16px;
-  /* box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 0.05),
-              0 2.0px 2.0px rgb(0 0 0 / 0.07),
-              0 5.0px 8.0px rgb(0 0 0 / 0.1); */
   color: var(--warm-white);
   display: flex;
   font-size: 20px;
@@ -671,13 +674,11 @@ a.button {
   width: 100%;
   vertical-align: middle;
 }
+.input::placeholder {
+  color: var(--gray-500);
+}
 .input.search {
   width: 200px;
-}
-@media (max-width: 600px) {
-  .input.search {
-    width: 38px;
-  }
 }
 .input:hover, .input:active {
   border-color: var(--gray-600);
@@ -765,6 +766,9 @@ input[type="radio"] {
     min-width: 700px;
   }
 }
+.timeexpense-table-wrapper {
+  position: relative;
+}
 .timeexpense-row-buttons span {
   display: none;
 }
@@ -842,16 +846,38 @@ input[type="radio"] {
   padding-top: 16px;
 }
 .time-table tr.is-running td {
-  background-color: var(--orange-50);
+  background-color: rgb(250 93 0 / 0.05);
+  position: relative;
+  z-index: 1;
 }
 @media (prefers-color-scheme: dark) {
   .time-table tr.is-running td {
     background-color: var(--gray-50);
   }
 }
-.weekly-progress {
-  background-color: var(--gray-alpha-50);
-  padding: 16px;
+.aura-background {
+  display: none;
+}
+@media (prefers-color-scheme: light) {
+  .aura-background {
+    bottom: 57px;
+    display: block;
+    height: 86px;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+}
+.team-running-timer {
+  background-color: var(--gray-alpha-100);
+  border-radius: 300px;
+  height: 9px;
+  margin: auto;
+  width: 9px;
+}
+.team-running-timer.running {
+  background-color: var(--color);
 }
 
 /* Tabs */
@@ -991,9 +1017,9 @@ input[type="radio"] {
   background-color: var(--green-100);
   border: 1px solid var(--green-300);
   border-radius: 4px;
-  box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 0.05),
-              0 2.0px 2.0px rgb(0 0 0 / 0.07),
-              0 5.0px 8.0px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.05),
+              0 2px 4px rgb(0 0 0 / 0.07),
+              0 4px 8px rgb(0 0 0 / 0.1);
   display: flex;
   font-size: 13px;
   gap: 4px;
@@ -1055,7 +1081,7 @@ input[type="radio"] {
 /* Form Box */
 .form-box {
   background-color: var(--orange-50);
-  border: 1px solid var(--orange-200);
+  border: 1px solid var(--orange-300);
   padding: 32px;
 }
 @media (prefers-color-scheme: dark) {
@@ -1116,10 +1142,9 @@ label {
 }
 .report-box {
   align-items: center;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   border: 1px solid transparent;
-  border-radius: 12px 0 12px 0;
-  color: var(--text);
+  border-radius: 10px 0 10px 0;
   display: inline-flex;
   padding: 16px;
   text-decoration: none;
@@ -1127,6 +1152,11 @@ label {
 .report-box img {
   height: 60px;
   margin-right: 16px;
+}
+.report-box h4 {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }
 .report-box:hover {
   background-color: var(--orange-50);
@@ -1137,7 +1167,7 @@ label {
   background: var(--gray-alpha-700);
   display: flex;
   justify-content: center;
-  height: 100%;
+  min-height: 100%;
   left: 0;
   pointer-events: none;
   position: fixed;
@@ -1145,18 +1175,35 @@ label {
   width: 100%;
   z-index: 100;
 }
-dialog {
+.dialog {
   background-color: var(--warm-white);
   border: 0;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 0.3),
-              0 2px 5px rgb(0 0 0 / 0.4),
-              0 3px 10px rgb(0 0 0 / 0.5);
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.05),
+              0 2px 4px rgb(0 0 0 / 0.07),
+              0 4px 8px rgb(0 0 0 / 0.1),
+              0 6px 12px rgb(0 0 0 / 0.14),
+              0 10px 20px rgb(0 0 0 / 0.2);
+  height: min-content;
   margin: 8vw auto;
   padding: 24px;
   pointer-events: all;
-  max-width: 640px;
-  width: 100%;
+  max-width: 100%;
+  width: 600px;
+}
+@media (max-width: 600px) {
+  .dialog {
+    margin: 2px;
+    width: calc(100% - 4px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .dialog-backdrop {
+    background-color: rgb(0 0 0 / 0.8);
+  }
+  .dialog {
+    background-color: var(--bg);
+  }
 }
 
 

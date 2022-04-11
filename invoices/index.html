@@ -89,7 +89,7 @@
             <span>More</span>
           </a>
           <hr>
-          <a href="#" class="">
+          <a href="/harvest-playground/integrations" class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             <span>Integrations</span>
           </a>
@@ -141,64 +141,12 @@
       <h1>Invoices</h1>
     </div>
     <div class="flex">
-      <button class="button primary is-disabled">
+      <a href="/harvest-playground/invoices-new" class="button primary">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
         Create invoice
-      </button>
-      <input class="input search" type="text" placeholder="Find an invoice…">
-    </div>
-  </div>
-  <div class="form-box mt-16">
-    <div class="form-box-inner">
-      <div class="field mb-16">
-        <div class="left">
-          <label>Client<span class="required">*</span></label>
-        </div>
-        <div class="right">
-          <select class="input" autofocus>
-            <option>Client A</option>
-            <option>Client B</option>
-            <option>Client C</option>
-          </select>
-        </div>
-      </div>
-      <div class="field mb-16">
-        <div class="left">
-          <label class="no-height">Invoice type</label>
-        </div>
-        <div class="right">
-          <div>
-            <label>
-              <input type="radio" checked="checked"> Create an invoice based on tracked time and expenses
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="radio"> Create a blank invoice that can be issued on a recurring schedule
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="radio"> Create a blank invoice
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="submit">
-        <button class="button primary">Next step <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
-        <button class="button cancel">Cancel</button>
-      </div>
-    </div>
-  </div>
-  <hr class="mt-16 mb-24">
-  <div class="summary mt-24 mb-24">
-    <div class="summary-no-box">
-      <span>Total open amount</span>
-      <h2>$123.45</h2>
-    </div>
-    <div class="summary-no-box">
-      <span>Total paid amount (this year)</span>
-      <h2>$123.45</h2>
+      </a>
+      <button class="button button-icon show-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+      <input class="input search show-desktop" type="text" placeholder="Find an invoice…">
     </div>
   </div>
   <div class="tabs mt-24 mb-16">
@@ -221,6 +169,26 @@
     <div class="flex">
       <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save</button>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
+    </div>
+  </div>
+  <div class="summary mt-16 mb-16">
+    <div class="summary-box">
+      Total open amount<br>
+      <h2>$1,234.56</h2>
+      <div class="flex justify-space-between mt-8">
+        Draft <strong>$123.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Outstanding <strong>$456.00</strong>
+      </div>
+    </div>
+    <div class="summary-box">
+      Total paid<br>
+      <h2>$1,234.56</h2>
+      <div class="pt-8"><div class="meter" style="width:100%"></div></div>
+      <div class="flex justify-space-between">
+        Invoiced <strong>$123.00</strong>
+      </div>
     </div>
   </div>
   <div class="empty big mt-16">
