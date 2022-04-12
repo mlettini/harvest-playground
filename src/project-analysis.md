@@ -11,7 +11,7 @@ title: Projects
   <div class="flex justify-space-between">
     <div>
       <div>
-        <span class="text-secondary">Client Name</span>
+        <span class="color-secondary">Client Name</span>
         <h1>[CODE] Project Name</h1>
       </div>
     </div>
