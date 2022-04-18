@@ -45,13 +45,13 @@ title: Expenses
       <thead>
         <tr>
           <th class="no-width"><input type="checkbox"></th>
-          <th class="is-sorted">Date <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></th>
+          <th class="no-width pr-0 is-sorted">Date <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></th>
+          <th class="no-width pr-32"></th>
           <th>Category</th>
           <th>Project</th>
-          <th class="no-width pr-0"></th>
-          <th class="no-width pr-32"></th>
           <th class="no-width text-right">Amount</th>
-          <th class="no-width text-center pr-0">Reimbursed?</th>
+          <th class="no-width no-width text-center">Billable?</th>
+          <th class="no-width no-width text-center">Reimbursed?</th>
           <th class="no-width pr-0"></th>
           <th class="no-width"></th>
         </tr>
@@ -59,7 +59,8 @@ title: Expenses
       <tbody>
         <tr>
           <td class="no-width"><input type="checkbox"></td>
-          <td>30 Mar 2022</td>
+          <td class="no-width pr-0 nowrap">30 Mar 2022</td>
+          <td class="no-width pr-32"><div class="badge pending">Pending</div></td>
           <td>
             Category name<br>
             <small class="color-secondary">Here are some notes</small>
@@ -68,12 +69,11 @@ title: Expenses
             [Code] Project name<br>
             <small class="color-secondary">Client name</small>
           </td>
-          <td class="nowrap pr-0"><div class="badge">Billable</div></td>
-          <td class="nowrap pr-32"><div class="badge pending">Pending</div></td>
           <td class="no-width text-right nowrap">
             <h4>$25.00</h4>
           </td>
-          <td class="text-center pr-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td class="no-width text-center">-</td>
+          <td class="no-width text-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
           <td class="text-right no-width pr-0">
             <div class="flex justify-content-end nowrap">
               <a href="#" class="button button-sm button-empty button-icon">
@@ -90,7 +90,8 @@ title: Expenses
         </tr>
         <tr>
           <td class="no-width"><input type="checkbox"></td>
-          <td>29 Mar 2022</td>
+          <td class="no-width pr-0 nowrap">29 Mar 2022</td>
+          <td class="no-width pr-32"></td>
           <td>
             Category name<br>
             <small class="color-secondary">Here are some notes</small>
@@ -99,12 +100,11 @@ title: Expenses
             [Code] Project name<br>
             <small class="color-secondary">Client name</small>
           </td>
-          <td class="nowrap pr-0"><div class="badge">Billable</div></td>
-          <td class="nowrap pr-32"></td>
           <td class="no-width text-right nowrap">
             <h4>$4.00</h4>
           </td>
-          <td class="text-center pr-0"></td>
+          <td class="no-width text-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td class="no-width text-center">-</td>
           <td class="text-right no-width pr-0">
             <div class="flex justify-content-end nowrap">
               <a href="#" class="button button-sm button-empty button-icon">
@@ -118,7 +118,8 @@ title: Expenses
         </tr>
         <tr class="locked">
           <td class="no-width"><input type="checkbox"></td>
-          <td>28 Mar 2022</td>
+          <td class="no-width pr-0 nowrap">28 Mar 2022 </td>
+          <td class="no-width pr-32"><div class="badge green">Approved</div></td>
           <td>
             Category name<br>
             <small class="color-secondary">Here are some notes</small>
@@ -127,12 +128,11 @@ title: Expenses
             [Code] Project name<br>
             <small class="color-secondary">Client name</small>
           </td>
-          <td class="nowrap pr-0"></td>
-          <td class="nowrap pr-32"><div class="badge green">Approved</div></td>
           <td class="no-width text-right nowrap">
             <h4>$123.00</h4>
           </td>
-          <td class="text-center pr-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td class="no-width text-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td class="no-width text-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
           <td class="text-right no-width pr-0">
             <div class="flex justify-content-end nowrap">
               <a href="#" class="button button-sm button-empty button-icon">

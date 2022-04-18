@@ -53,7 +53,7 @@ title: More
         <tr>
           <th class="no-width"><input type="checkbox"></th>
           <th class="is-sorted">Tasks <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></th>
-          <th class="text-right pr-32">Default hourly rate</th>
+          <th>Default hourly rate</th>
           <th class="no-width text-center pr-32 nowrap">Billable by default</th>
           <th class="no-width text-center pr-32">Common</th>
           <th class="no-width"></th>
@@ -63,9 +63,9 @@ title: More
         <tr>
           <td class="no-width"><input type="checkbox"></td>
           <td>Task name</td>
-          <td class="text-right pr-32">$100,000.00 USD</td>
-          <td class="text-center pr-32"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
-          <td class="text-center pr-32"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td>$100,000.00 USD</td>
+          <td class="no-width text-center pr-32"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
+          <td class="no-width text-center pr-32"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><polyline points="20 6 9 17 4 12"></polyline></svg></td>
           <td class="no-width">
             <a href="{{ '/more-tasks-dialog' | url }}" class="button button-sm button-empty button-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>

@@ -25,7 +25,7 @@ title: Time
 
   <hr class="mt-16 mb-16">
 
-  <div class="flex justify-space-between">
+  <div class="flex justify-space-between filters">
     <div class="flex">
       <button class="button button-sm is-disabled"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg> Bulk actions</button>
       <div class="button-group">
@@ -56,97 +56,90 @@ title: Time
     </nav>
   </div>
 
-  <div class="timeexpense-table-wrapper">
+  <div class="table-wrapper">
     <table border="0" class="table time-table" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="no-width"><input type="checkbox"></th>
+          <th>Task</th>
+          <th>Project</th>
+          <th class="is-sorted">Times <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></th>
+          <th class="no-width text-right">Duration</th>
+          <th class="no-width pr-0"></th>
+          <th class="no-width"></th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td class="no-width"><input type="checkbox"></td>
           <td>
-            <strong>Task name</strong><br>
-            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
-            <small>1:20pm – 4:20pm <span style="color:#666">/ Here are some notes</span></small>
+            Task name<br>
+            <small class="color-secondary">Here are some notes</small>
           </td>
-          <td class="no-width text-right nowrap">
-            <h3>3.00</h3>
-          </td>
-          <td class="no-width timeexpense-row-buttons">
-            <div class="flex">
-              <button class="button button-sm button-empty button-icon show-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></button>
-              <button class="button show-desktop"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Start</button>
-              <a href="#" class="button button-sm button-empty button-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
-              </a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-width"><input type="checkbox"></td>
           <td>
-            <strong>Task name</strong><br>
-            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
-            <small>1:20pm – 4:20pm</small>
+            [Code] Project name<br>
+            <small class="color-secondary">Client name</small>
+          </td>
+          <td class="nowrap">
+            1:30 – 4:20
           </td>
           <td class="no-width text-right nowrap">
             <h3>3:00</h3>
           </td>
-          <td class="no-width timeexpense-row-buttons">
-            <div class="flex">
-              <button class="button button-sm button-empty button-icon show-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></button>
-              <button class="button show-desktop"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Start</button>
-              <a href="#" class="button button-sm button-empty button-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
-              </a>
-            </div>
+          <td class="no-width pr-0">
+            <button class="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Start</button>
+          </td>
+          <td class="no-width">
+            <a href="#" class="button button-sm button-empty button-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
+            </a>
           </td>
         </tr>
         <tr class="is-running">
           <td class="no-width"><input type="checkbox"></td>
           <td>
-            <strong>Task name</strong><br>
-            <small>[CODE] Project name <span class="ml-4">(Client Name)</small><br>
-            <small>4:20pm –</small>
+            Task name<br>
+            <small class="color-secondary">Here are some notes</small>
+          </td>
+          <td>
+            [Code] Project name<br>
+            <small class="color-secondary">Client name</small>
+          </td>
+          <td class="nowrap">
+            4:21 –
           </td>
           <td class="no-width text-right nowrap">
             <h3>0:36</h3>
           </td>
-          <td class="no-width timeexpense-row-buttons">
-            <div class="flex">
-              <button class="button button-sm running button-icon show-mobile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="6" x2="12" y2="12">
-                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="3s" repeatCount="indefinite"></animateTransform>
-                  </line>
-                  <line x1="16" y1="14" x2="12" y2="12">
-                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="30s" repeatCount="indefinite"></animateTransform>
-                  </line>
-                </svg>
-              </button>
-              <button class="button running show-desktop">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="6" x2="12" y2="12">
-                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="3s" repeatCount="indefinite"></animateTransform>
-                  </line>
-                  <line x1="16" y1="14" x2="12" y2="12">
-                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="30s" repeatCount="indefinite"></animateTransform>
-                  </line>
-                </svg>
-                Stop
-              </button>
-              <a href="#" class="button button-sm button-empty button-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
-              </a>
-            </div>
+          <td class="no-width pr-0">
+            <button class="button running">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="12">
+                  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="3s" repeatCount="indefinite"></animateTransform>
+                </line>
+                <line x1="16" y1="14" x2="12" y2="12">
+                  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 12" to="360 12 12" dur="30s" repeatCount="indefinite"></animateTransform>
+                </line>
+              </svg>
+              Stop
+            </button>
+          </td>
+          <td class="no-width">
+            <a href="#" class="button button-sm button-empty button-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="20" cy="12" r="1"></circle><circle cx="4" cy="12" r="1"></circle></svg>
+            </a>
           </td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
+          <td class="no-width"></td>
+          <td></td>
           <td></td>
           <td class="text-right"><h3 class="text-400 color-secondary">Total:</h3></td>
-          <td class="text-right"><h3>6:36</h3></td>
-          <td></td>
+          <td class="no-width text-right"><h3>6:36</h3></td>
+          <td class="no-width"></td>
         </tr>
       </tfoot>
     </table>
