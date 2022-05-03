@@ -97,7 +97,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
             <span>Help</span>
           </a>
-          <a href="/harvest-playground/integrations" class="">
+          <a href="/harvest-playground/integrations"  class="">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             <span>Integrations</span>
           </a>
@@ -105,11 +105,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             <span>Settings</span>
           </a>
-          <hr>
-          <a href="#profile-menu" class="user" onclick="toggle_visibility('profile-menu');">
+          <a href="#profile-menu" class="user show-mobile" onclick="toggle_visibility('profile-menu');">
             <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg">
             <span>Matthew</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto color-secondary"><polyline points="8 10 14 16 20 10"></polyline></svg>
+          </a>
+          <a href="#profile-menu" class="user show-desktop" onclick="toggle_visibility('user-popover');">
+            <img src="https://matthewlettini.me/images/matthew-lettini-avatar.jpg">
+            <span>Matthew</span>
           </a>
           <div id="profile-menu" style="display:none">
             <a href="/harvest-playground/profile">My profile</a>
@@ -156,7 +159,7 @@
   <ul class="ml-16">
     <li class="mb-16">
       <strong>Accessible rebrand</strong><br>
-      Leaning more heavily into the new brand, but altered to work better with a modern web app and be more accessible. It was entirely unplanned that, with this style, Harvest kinda looks more like Toggl Track. Our warm-white is similar to their background.
+      Leaning more heavily into the new brand, matching the marketing website, and staying accessible with no orange navigation. It was entirely unplanned that, with this style, Harvest kinda looks more like Toggl Track.
     </li>
     <li class="mb-16">
       <strong>Left-side navigation</strong><br>
@@ -168,15 +171,11 @@
     </li>
     <li class="mb-16">
       <strong>Consistent headlines</strong><br>
-      Attempting to name every page in the app. This is an IA design that can help customers understand where they are, and offer us a clear space to link education info.
+      Attempting to name every page in the app. This is an IA design that can help customers understand where they are, and perhaps offer us a clear space to link education info.
     </li>
     <li class="mb-16">
       <strong>Consistent components</strong><br>
       Attempting to make everything as consistent as possible across every page in the app. This includes timeframe selectors, filters, export buttons, summaries, and more.
-    </li>
-    <li class="mb-16">
-      <strong>Approval section</strong><br>
-      Approving time and/or expenses is a specific function that can and should stand on it’s own, especially if we invest more heavily into expenses.
     </li>
     <li class="mb-16">
       <strong>Report library</strong><br>
@@ -188,7 +187,7 @@
     </li>
     <li class="mb-16">
       <strong>Bulk actions</strong><br>
-      Every row of every table is has a dedicated actions button and is selectable for bulk actions. A disabled bulk actions button shows where that button would appear.
+      Every row of every table is selectable for bulk actions. Every row of every table is also clickable, and has an Actions menu on the right.
     </li>
     <li class="mb-16">
       <strong>Dark mode</strong><br>
@@ -196,15 +195,20 @@
     </li>
     <li class="mb-16">
       <strong>Responsive for mobile devices</strong><br>
-      It’s not optimized, but I’ve tried to make this prototype work well on smaller screens like current Harvest.
+      It’s not optimized, but I’ve tried to make this prototype work well on smaller screens like current Harvest. Need to update the Time and Expenses tables though.
     </li>
   </ul>
-  Still to do:<br>
-  – Optimize menu button for mobile and tablet<br>
-  – Optimize time and expense rows for mobile and tablet<br>
-  – Add onboarding education to timesheet
 </main>
 </div>
+
+    <div id="user-popover" class="menu" style="display:none;">
+      <a href="/harvest-playground/profile">My profile</a>
+      <a href="#">Refer a friend…</a>
+      <a href="#">Download apps <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      <hr>
+      <a href="#">Switch accounts…</a>
+      <a href="#">Sign out</a>
+    </div>
 
     <div id="help-popover" class="menu" style="display:none">
       <a href="#">What’s new</a>

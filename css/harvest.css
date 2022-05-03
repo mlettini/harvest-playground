@@ -1288,6 +1288,10 @@ label {
   bottom: 72px;
   right: 16px;
 }
+.menu#user-popover {
+  left: calc(var(--left-nav-width) - 12px);
+  top: 448px;
+}
 .menu > a {
   align-items: center;
   color: var(--color);
@@ -1300,7 +1304,9 @@ label {
 }
 .menu > a:hover {
   background: var(--blue-100);
-  /* color: var(--white); */
+}
+.menu > a:active {
+  background: var(--blue-200);
 }
 .menu hr {
   background-color: var(--gray-200);
@@ -1449,17 +1455,17 @@ label {
 
 /* Desktop vs Mobile */
 .show-desktop {
-  display: flex;
+  display: flex !important;
 }
 .show-mobile {
-  display: none;
+  display: none !important;
 }
 @media (max-width: 1000px) {
   .show-desktop {
-    display: none;
+    display: none !important;
   }
   .show-mobile {
-    display: flex;
+    display: flex !important;
   }
 }
 
