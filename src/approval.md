@@ -21,4 +21,14 @@ title: Approval
     </nav>
   </div>
 
+  <div class="flex justify-space-between filters">
+    <div class="flex">
+      <button class="button button-sm">Sort by: Projects <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
+      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="18" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg> Filter</button>
+    </div>
+    <div class="flex">
+      <button class="button button-sm primary">Approve all timesheets</button>
+    </div>
+  </div>
+
 </main>

@@ -1,6 +1,6 @@
 ---
 layout: layouts/harvest.njk
-title: Schedule
+title: Integrations
 ---
 
 <main>

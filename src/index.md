@@ -14,7 +14,7 @@ title: Home
   <ul class="ml-16">
     <li class="mb-16">
       <strong>Accessible rebrand</strong><br>
-      Leaning more heavily into the new brand, but altered to work better with a modern web app and be more accessible. It was entirely unplanned that, with this style, Harvest kinda looks more like Toggl Track. Our warm-white is similar to their background.
+      Leaning more heavily into the new brand, matching the marketing website, and staying accessible with no orange navigation. It was entirely unplanned that, with this style, Harvest kinda looks more like Toggl Track.
     </li>
     <li class="mb-16">
       <strong>Left-side navigation</strong><br>
@@ -26,15 +26,11 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Consistent headlines</strong><br>
-      Attempting to name every page in the app. This is an IA design that can help customers understand where they are, and offer us a clear space to link education info.
+      Attempting to name every page in the app. This is an IA design that can help customers understand where they are, and perhaps offer us a clear space to link education info.
     </li>
     <li class="mb-16">
       <strong>Consistent components</strong><br>
       Attempting to make everything as consistent as possible across every page in the app. This includes timeframe selectors, filters, export buttons, summaries, and more.
-    </li>
-    <li class="mb-16">
-      <strong>Approval section</strong><br>
-      Approving time and/or expenses is a specific function that can and should stand on it’s own, especially if we invest more heavily into expenses.
     </li>
     <li class="mb-16">
       <strong>Report library</strong><br>
@@ -46,7 +42,7 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Bulk actions</strong><br>
-      Every row of every table is has a dedicated actions button and is selectable for bulk actions. A disabled bulk actions button shows where that button would appear.
+      Every row of every table is selectable for bulk actions. Every row of every table is also clickable, and has an Actions menu on the right.
     </li>
     <li class="mb-16">
       <strong>Dark mode</strong><br>
@@ -54,11 +50,7 @@ title: Home
     </li>
     <li class="mb-16">
       <strong>Responsive for mobile devices</strong><br>
-      It’s not optimized, but I’ve tried to make this prototype work well on smaller screens like current Harvest.
+      It’s not optimized, but I’ve tried to make this prototype work well on smaller screens like current Harvest. Need to update the Time and Expenses tables though.
     </li>
   </ul>
-  Still to do:<br>
-  – Optimize menu button for mobile and tablet<br>
-  – Optimize time and expense rows for mobile and tablet<br>
-  – Add onboarding education to timesheet
 </main>
