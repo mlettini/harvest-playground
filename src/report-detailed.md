@@ -13,7 +13,7 @@ title: Reports
       <h1>Detailed time report</h1>
     </div>
     <div class="flex">
-      <h3 class="mr-8">Jan – Dec 2021</h3>
+      <h3 class="mr-8"></h3>
       <button class="button primary">Update report</button>
     </div>
   </div>
@@ -26,23 +26,24 @@ title: Reports
       <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> Customize</button>
     </div>
     <div class="flex">
-      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save</button>
+      <button class="button button-sm"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> Save report</button>
       <button class="button button-sm">Export <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 10 14 16 20 10"></polyline></svg></button>
     </div>
   </div>
 
-  <div class="summary mt-24 mb-24">
-    <div class="summary-no-box">
+  <div class="summary mt-16 mb-16">
+    <div class="summary-box">
       Total hours<br>
       <h2>123.45</h2>
+      <div class="flex justify-space-between mt-8">
+        Billable <strong>3.00</strong>
+      </div>
+      <div class="flex justify-space-between">
+        Uninvoiced billable <strong>0.00</strong>
+      </div>
     </div>
-    <div class="summary-no-box">
-      Uninvoiced billable hours<br>
-      <h2>23.45</h2>
-    </div>
-    <div class="summary-no-box">
-      Filters<br>
-      <h4>All clients, projects, tasks, and people</h4>
+    <div class="summary-box">
+      Showing all time entries between <strong>Jan – Dec 2021</strong> across <strong>all clients</strong>, <strong>all projects</strong>, <strong>all tasks</strong>, and <strong>all people</strong>.
     </div>
   </div>
 
