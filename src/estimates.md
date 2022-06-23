@@ -32,7 +32,7 @@ title: Estimates
     </div>
   </div>
 
-  <div class="tabs mt-24 mb-16">
+  <div class="tabs mt-16 mb-16">
     <nav>
       <a href="#">Open <div class="badge">4</div></a>
       <a href="#">Saved view</a>

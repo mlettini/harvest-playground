@@ -10,7 +10,7 @@ title: Reports
 
   <h1>Summary time report</h1>
 
-  <div class="tabs mt-24 mb-16">
+  <div class="tabs mt-16 mb-16">
     <nav>
       <a href="#" class="is-selected">Clients</a>
       <a href="#">Projects</a>

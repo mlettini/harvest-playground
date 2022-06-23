@@ -12,7 +12,7 @@ title: Integrations
     </div>
   </div>
 
-  <div class="tabs mt-24 mb-16">
+  <div class="tabs mt-16 mb-16">
     <nav>
       <a href="#" class="is-selected">All integrations</a>
       <a href="#">Installed <div class="badge">3</div></a>

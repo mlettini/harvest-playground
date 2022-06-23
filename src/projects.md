@@ -18,7 +18,7 @@ title: Projects
     </div>
   </div>
 
-  <div class="tabs mt-24 mb-16">
+  <div class="tabs mt-16 mb-16">
     <nav>
       <a href="#" class="is-selected">Active <div class="badge">57</div></a>
       <a href="#">Budgeted <div class="badge">42</div></a>

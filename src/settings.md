@@ -9,7 +9,7 @@ title: Settings
     <small>Looking for your profile settings? <a href="{{ '/profile' | url }}">Click here</a></small>
   </div>
 
-  <div class="tabs mt-24 mb-16">
+  <div class="tabs mt-16 mb-16">
     <nav>
       <a href="#" class="is-selected">General</a>
       <a href="#">Preferences</a>
